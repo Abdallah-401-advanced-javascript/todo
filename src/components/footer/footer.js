@@ -6,7 +6,7 @@ function Footer (props) {
   return (
     <footer>
       <Navbar bg="light" expand="lg">
-        <Navbar.Brand>&copy; 2020 BEST SITE EVER DONT THIEF THE CONCEPT</Navbar.Brand>
+        <Navbar.Brand>&copy; 2020 To-do or not to-do thats is the question</Navbar.Brand>
       </Navbar>
     </footer>
   );
