@@ -3,10 +3,11 @@ import React, { useEffect, useState } from 'react';
 import TodoForm from './form.js';
 import TodoList from './list.js';
 import Alert from 'react-bootstrap/Alert';
+import axios from 'axios';
 
 import './todo.scss';
 
-const todoAPI = 'https://api-js401.herokuapp.com/api/v1/todo';
+const todoAPI = 'https://lab-32.herokuapp.com/todo';
 
 
 const ToDo = () => {
@@ -55,13 +56,15 @@ const ToDo = () => {
   };
 
   const _getTodoItems = () => {
-    fetch(todoAPI, {
+    axios(todoAPI, {
       method: 'get',
       mode: 'cors',
     })
       .then(data => data.json())
-      .then(data => setList(data.results))
+      .then(data => setList(console.log('asdsadkaslhdshfkldsahkfhdsalhf',data.results)))
       .catch(console.error);
+
+      
   };
 
   useEffect(_getTodoItems, []);
@@ -70,7 +73,7 @@ const ToDo = () => {
     <><div>
       <Alert color="success">
         <h2>
-          There are {list.filter(item => !item.complete).length} Items To Complete
+          {/* There are {list.filter(item => !item.complete).length} Items To Complete */}
         </h2>
       </Alert>
     </div>
@@ -78,14 +81,14 @@ const ToDo = () => {
     <section className="todo">
 
       <div>
-        <TodoForm handleSubmit={_addItem} />
+        {/* <TodoForm handleSubmit={_addItem} /> */}
       </div>
 
       <div>
-        <TodoList
-          list={list}
-          handleComplete={_toggleComplete}
-        />
+        {/* <TodoList */}
+          // list={list}
+          // handleComplete={_toggleComplete}
+        {/* /> */}
       </div>
     </section>
     </>
