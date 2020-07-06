@@ -5,6 +5,7 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "axios": "^0.19.2",
     "babel-eslint": "^10.1.0",
     "bootstrap": "^4.5.0",
     "eslint": "^7.4.0",
@@ -54,5 +55,5 @@
   "bugs": {
     "url": "https://github.com/Abdallah-Obaid/todo/issues"
   },
-  "homepage": "https://abdallah-obaid.github.io/todo/"
+  "homepage": "https://abdallah-401-advanced-javascript.github.io/todo/"
 }
