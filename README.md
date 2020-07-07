@@ -1,6 +1,6 @@
-# LAB - 32
+# LAB - 33
 <!-- ## Project: Project Name Here -->
-## Custom Hooks
+## Context API
 
 ### Author: Abdallah Obaid
 
@@ -23,8 +23,8 @@
 <!-- #### `events.js`. -->
 
 ##### Exported Values and Methods
-`<form/>` function, `<Footer/>` function,`<Header/>` function,`<todo/>` function, `<list/>` function, `<todo-connected/>` function
-<!-- ###### `events.js`
+`<form/>` function, `<Footer/>` function,`<Header/>` function,`<todo/>` function, `<list/>` function, `<todo-connected/>` function, <SettingsContext.Provider/> function
+<!-- ###### `events.js` 
 This is to require the event and use it in the other files. -->
 
 ### Setup
@@ -80,4 +80,4 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 #### UML
 
-![UML Diagram](whiteboardclass32.jpg)
+![UML Diagram](whiteboardclass33.jpg)

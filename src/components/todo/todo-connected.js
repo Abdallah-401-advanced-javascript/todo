@@ -78,8 +78,6 @@ const ToDo = () => {
   };
   
   const handleDelete =(_id) =>{
-    // let item = list.filter(i => i._id === _id)[0] || {};
-    // let index = list.indexOf(item);
     axios.delete(todoAPI, {
       headers: {
         'Content-Type': 'application/json',
@@ -89,15 +87,12 @@ const ToDo = () => {
       },
     })
       .then(afterDelete => {
-        // list.splice(index,1);
         window.location.reload(true);
 
       })
       .catch(console.error);
   };
  
-  // empty response: {}
-
   const _getTodoItems = () => {
     axios.get(todoAPI)
       .then(res => {
@@ -110,7 +105,6 @@ const ToDo = () => {
   };
 
   useEffect(_getTodoItems, []);
-  // useEffect(_toggleComplete, list);
   
   return (
     <><div>
