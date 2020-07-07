@@ -29,7 +29,7 @@ function TodoList (props) {
           <li
             key={item}
           >
-            <button  onClick={() => context.view(i)}>{i+1}</button>
+            <button id="btn-primary" onClick={() => context.view(i)}>{i+1}</button>
           </li>
         ))}
       </ul>
