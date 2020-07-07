@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import TodoForm from './form.js';
 import TodoList from './list.js';
+import  SettingsContext  from '../../context/settings/context';
 import Todo  from './todo-connected';
 import './todo.scss';
 
@@ -60,7 +61,8 @@ function ToDo (props) {
         <div>
           <TodoForm handleSubmit={addItem} />
         </div>
-
+        
+   
         <div>
           <TodoList
             list={listAll}
