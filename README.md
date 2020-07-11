@@ -1,6 +1,6 @@
 # LAB - 33
 <!-- ## Project: Project Name Here -->
-## Context API
+## LAB - `<Login />` and `<Auth />`
 
 ### Author: Abdallah Obaid
 
@@ -80,4 +80,4 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 #### UML
 
-![UML Diagram](whiteboardclass33.jpg)
+![UML Diagram](whiteboardclass34.jpg)
