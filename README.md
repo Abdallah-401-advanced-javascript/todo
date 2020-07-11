@@ -1,4 +1,4 @@
-# LAB - 33
+# LAB - 34
 <!-- ## Project: Project Name Here -->
 ## LAB - `<Login />` and `<Auth />`
 
@@ -6,7 +6,7 @@
 
 ### Links and Resources
 
-* [submission PR](https://github.com/Abdallah-401-advanced-javascript/todo/pull/1)
+* [submission PR](https://github.com/Abdallah-401-advanced-javascript/todo/pull/5)
 <!-- * [travis](https://github.com/Abdallah-401-advanced-javascript/caps/pull/2/checks?check_run_id=775094621)ز -->
 <!-- * [ci/cd](https://github.com/Abdallah-401-advanced-javascript/caps/pull/2/checks?check_run_id=775094661) -->
 <!-- - [back-end server url](http://xyz.com) (when applicable) -->
@@ -23,7 +23,7 @@
 <!-- #### `events.js`. -->
 
 ##### Exported Values and Methods
-`<form/>` function, `<Footer/>` function,`<Header/>` function,`<todo/>` function, `<list/>` function, `<todo-connected/>` function, <SettingsContext.Provider/> function
+`<form/>` function, `<Footer/>` function,`<Header/>` function,`<todo/>` function, `<list/>` function, `<todo-connected/>` function, <SettingsContext.Provider/> function, `<Auth/>` class, `show` function
 <!-- ###### `events.js` 
 This is to require the event and use it in the other files. -->
 
