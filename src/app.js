@@ -27,7 +27,6 @@ const EditLink = props => {
 const ReadLink = props => {
   return (
     <Auth capability="read">
-      <Header/>
       <SettingsContext>
         <ToDo />
       </SettingsContext>
@@ -48,6 +47,7 @@ function App (){
   return (
     <>
       <LoginContext>
+        <Header/>
         <Login />
         <Alert variant="success">
           <Alert.Heading>Hey, nice to see you</Alert.Heading>
