@@ -16,14 +16,6 @@ import Alert from 'react-bootstrap/Alert';
 // sass
 import './app.scss';
 
-const EditLink = props => {
-  return (
-    <Auth capability="dance">
-      <span>Fake Update Link </span>
-    </Auth>
-  );
-};
-
 const ReadLink = props => {
   return (
     <Auth capability="read">
@@ -35,13 +27,6 @@ const ReadLink = props => {
   );
 };
 
-const DeleteLink = props => {
-  return (
-    <Auth capability="delete">
-      <span>Fake Delete Link </span>
-    </Auth>
-  );
-};
 
 function App (){
   return (
@@ -58,8 +43,6 @@ function App (){
           <img src="https://thumbs.gfycat.com/AbsoluteBelatedClam-size_restricted.gif" alt="Italian Trulli"/>
         </Alert>
         <hr />
-        <EditLink />
-        <DeleteLink />
         <ReadLink />
       </LoginContext>
       {/* <Header/>
