@@ -2,6 +2,7 @@
 import React, { useContext,useEffect } from 'react';
 import {SettingsContext} from '../../context/settings/context';
 import  SettingsContex1 from '../../context/settings/context';
+import Auth from '../../context/auth/auth.js';
 function TodoList (props) {
   const context = useContext(SettingsContext);
   return (
@@ -18,8 +19,12 @@ function TodoList (props) {
               {item.text}
             </span>
             <span >{'Difficulty: '+item.difficulty}</span>
-            <button onClick={() => props.handleDelete(item._id)}>Delete </button>
-            <button onClick={() => props.handleUpdate(i)}>Update </button>
+            <Auth capability="delete">
+              <button onClick={() => props.handleDelete(item._id)}>Delete </button>
+            </Auth>
+            <Auth capability="update">
+              <button onClick={() => props.handleUpdate(i)}>Update </button>
+            </Auth>
             <input type="text" name={i}  placeholder={'Update text '+item.text} />
           </li>           
         ))}    

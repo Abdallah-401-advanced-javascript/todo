@@ -72,6 +72,13 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 
 #### Tests
+* username:"ahmadTheAdmin"
+  password:123
+  role:"Administrators" // can (create, read, update, delete)
+
+* username:"ahmadThePoor"
+  password:123
+  role:"user" // can (read)
 
 * Shallow, Mount and Snapshot tests: `npm test`
 * Lint Tests: `npm run lint`
